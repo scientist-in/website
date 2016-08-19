@@ -1,0 +1,24 @@
+/* your styles go here */
+.arrow-down {
+    position: absolute;
+    cursor: pointer;
+    bottom: 100px;
+    width: 8vh;
+    left: 48%;
+    margin-left: -15px;
+    -webkit-animation: fadeInOut 2s infinite;
+    z-index: 10;
+  }
+  #img-arrow{
+    cursor: pointer;
+    width:inherit;
+  }
+  
+  @-webkit-keyframes fadeInOut {
+      from { opacity: 0.2; }
+      50% { opacity: 0.8; }
+      to { opacity: 0.2; }
+  }
+ .text>.container{
+    height: 60vh;
+ }
