@@ -45,19 +45,71 @@ $(document).ready(function(){
     },
     offset:$("#header-topic2").height()+42
     });
-    
+    var waypoint4 = new Waypoint({
+    element: document.getElementById('header-topic4'),
+    handler: function(direction) {
+        if (direction=='down'){
+        $("#header-topic3").unstick();
+        $("#header-topic4").sticky({topSpacing:42});    
+        }
+        else{
+        $("#header-topic4").unstick();
+        $("#header-topic3").sticky({topSpacing:42});        
+        }
+    },
+    offset:$("#header-topic2").height()+42
+    });
+    var waypoint5 = new Waypoint({
+    element: document.getElementById('header-topic5'),
+    handler: function(direction) {
+        if (direction=='down'){
+        $("#header-topic4").unstick();
+        //$("#header-topic5").sticky({topSpacing:42});    
+        }
+        else{
+        //$("#header-topic5").unstick();
+        $("#header-topic4").sticky({topSpacing:42});        
+        }
+    },
+    offset:$("#header-topic2").height()+42
+    });
+     
 }
 
 );
 $("#intro").click(function() {
     $('html, body').animate({
-        scrollTop: $("#analytics").offset().top
+        scrollTop: $("#analytics").offset().top+18
     }, 1000);
 });
-$("li a").click(function() {
-    $(".navbar-header button").trigger("click");
+//$("li a").click(function() {
+//    $(".navbar-header button").trigger("click");
+//});
+$(".navbar-btn").click(function(){
+    if(parseInt($(".overlay-for-navbar").css("z-index"))==-1){
+        $(".overlay-for-navbar").css("z-index",1000);
+    } else {
+        $(".overlay-for-navbar").css("z-index",-1);
+    }
 });
 
+//$(window).scroll(function(){
+  //console.log($('#header-topic').offset().top);
+  //console.log($(window).scrollTop());
+  //current_element = $('section .is-sticky');
+  //console.log(current_element);
+  //var reg = new RegExp('[0-9]');
+  //current_id_num = reg.exec(current_element.attr('id'))[0];
+  //current_id_num = parseInt(current_id_num);
+  //if(current_id_num>1&current_id_num<4){
+  //  previous_element = $('#header-topic'+(parseInt(current_id_num)-1));
+  //  next_element = $('#header-topic'+(parseInt(current_id_num)+1));
+  //  console.log(previous_element.offset());
+  //  console.log(current_element.offset());
+  //  console.log(next_element.offset());
+  //}
+  //
+//});
 /* for demo purpose only - can be deleted */
 
 function demo() {

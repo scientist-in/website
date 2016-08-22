@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <!-- Google fonts - Montserrat for headings, Cardo for copy-->
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,600,700" rel="stylesheet">
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- ekko lightbox-->
@@ -32,7 +33,9 @@
   <body data-spy="scroll" data-target="#navigation" data-offset="120">
     <!-- intro-->
     <section id="intro" style="background-image: url('img/test-pic.jpg');" class="intro">      <!--style="background-image: url('img/ein-steig.jpg');"-->
+      <div class="overlay-for-navbar" ></div>
       <div class="overlay" ></div><!---->
+      
       <div class="content">
         <div class="container clearfix">
           <div class="row">
@@ -80,21 +83,22 @@
     </header>
     <!-- /.navbar-->
     <!-- about-->
+      <div id= "content">
       <section id="analytics" class="text">
         <header class="subheader" id="header-topic">
       
-        <div role="navigation" class="navbar navbar-default">
+        <div role="navigation" class="navbar navbar-default subnav">
           <div class="container">
             <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-2">
               <h3 class="heading">Analytics</h3>
             </div>
-            <div class="col-md-6 col-md-offset-3">
+            <div class="col-md-6 col-md-offset-1">
               <h6> So you've got your data. . .  Let's get the best out of it</h6>
             </div>
         </div>
       </div>
-    </header>
+    </header><br>
         <div class="container">
           <div class="row">
             
@@ -140,15 +144,15 @@
       </section>
       <!-- about end-->
       <!-- Services-->
-      <section id="data-science" style="background-color: #eee">
+      <section id="data-science" class="alt">
         <header class="subheader" id="header-topic2">
-          <div role="navigation" class="navbar navbar-default">
+          <div role="navigation" class="navbar navbar-default subnav">
             <div class="container">
               <div class="row">
               <div class="col-md-2">
                 <h3 class="heading">Data Science</h3>
               </div>
-              <div class="col-md-6 col-md-offset-3">
+              <div class="col-md-6 col-md-offset-1">
                 <h6> You've been looking at your data through graphs and charts &amp Now is the time to do some science with it</h6>
               </div>
             </div>
@@ -191,13 +195,13 @@
         
         <header class="subheader" id="header-topic3">
       
-          <div role="navigation" class="navbar navbar-default">
+          <div role="navigation" class="navbar navbar-default subnav">
             <div class="container">
               <div class="row">
               <div class="col-md-2">
                 <h3 class="heading">Machine Learning</h3>
               </div>
-              <div class="col-md-6 col-md-offset-3">
+              <div class="col-md-6 col-md-offset-1">
                 <h6> Let the machine do it for you</h6>
               </div>
           </div>
@@ -205,28 +209,126 @@
         </div>
      </header>
         <div class="container clearfix">
-          
+          <div class="row services">
+            <div class="col-md-12">
+              <div class="row">
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-eye"></i></div>
+                    <h4>Computer Vision</h4>
+                    <p>Deep Neural Nets to look at things for you</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-comments"></i></div>
+                    <h4>Natural Language Processing</h4>
+                    <p>Get cues from mammoth text data</p>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-shopping-basket"></i></div>
+                    <h4></h4>
+                    <p>Bleeding edge e-commerce recommendations. Really !</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Portfolio / gallery end-->
       <!-- text page-->
-      <section id="ai" style="background-color: #333;" class="text-page section-inverse">
+      <section id="ai" class="text-page alt">
+        <header class="subheader" id="header-topic4">
+      
+          <div role="navigation" class="navbar navbar-default subnav">
+            <div class="container">
+              <div class="row">
+              <div class="col-md-2">
+                <h3 class="heading">Artificial Intelligence</h3>
+              </div>
+              <div class="col-md-6 col-md-offset-1">
+                <h6>Get the power of AI in your hands</h6>
+              </div>
+          </div>
+            </div>
+        </div>
+     </header>
         <div class="container">
-                    <div class="row col-md-offset-2">
-
-                      <h2>Artificial Intelligence</h2>
-                      <h3>Get the power of AI in your hands</h3>
-                    </div>
+           <div class="container clearfix">
+          <div class="row services">
+            <div class="col-md-12">
+              <div class="row"> 
+                <div class="col-md-5 col-md-offset-2">
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-bolt"></i></div>
+                    <h4>Power of Intelligence</h4>
+                    <p>Make your devices and processes superpowerful and supersmart with our AI layers</p>
+                  </div>
+                </div>
+                <div class="col-md-5">
+                  <div class="box">
+                    <div class="icon"><i class="fa fa-android"></i></div>
+                    <h4>Intelligent Agents</h4>
+                    <p>Relax and watch as our AI bots help you out</p>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+                    
         </div>
       </section>
       <!-- text page end-->
       <!-- contact-->
-      <section id="contact" style="background-color: #fff;" class="text-page"> 
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12 col-md-offset-3">
-              <h2 class="heading">Contact Us</h2>
+      <section id="contact" style="background-color: #fff;" class="text-page">
+        <header class="subheader" id="header-topic5">
+      
+          <div role="navigation" class="navbar navbar-default subnav">
+            <div class="container">
               <div class="row">
+              <div class="col-md-3">
+                <h3 class="heading">Contact Us</h3>
+              </div>
+              <div class="col-md-6 col-md-offset-3">
+                
+              </div>
+          </div>
+            </div>
+        </div>
+     </header>
+        <div class="container">
+          <br>
+          <div class="row">
+            <h6>reach out</h6>
+            <div class="col-md-12 col-md-offset-1">
+             
+              <div class="row">
+                
+                 <div class="col-sm-3">
+                  <div class="icon"><i class="fa fa-phone"></i></div>
+                  <p>(+91) 991-669-5156</p>
+                 </div>
+                 <div class="col-sm-3">
+                  <div class="icon"><i class="fa fa-building-o"></i></div>
+                  <p>212, 7th A Main</p>
+                  <p>1st Block, HRBR Layout</p>
+                  <p>Bangalore (IND)</p>
+                 </div>
+                 <div class="col-sm-3">
+                  <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                  <p>anurag@scientist-tech.com</p>
+                 </div>
+              
+              </div>
+            </div>
+            <hr>
+            <h6>or leave a message</h6>
+            <div class="col-md-12">
                 <div class="col-md-6">
                   <form id="contact-form" method="post" action="http://52.36.119.103:8000/contact" class="contact-form">
                     <div class="controls">
@@ -234,7 +336,7 @@
                         <div class="col-sm-6">
                           <div class="form-group">
                             <label for="name">Your name *</label>
-                            <input type="text" name="name" placeholder="Enter your name" required="required" class="form-control">
+                            <input type="text" name="firstname" placeholder="Enter your name" required="required" class="form-control">
                           </div>
                         </div>
                       </div>
@@ -256,11 +358,13 @@
                 </div>
                 
               </div>
+              
             </div>
           </div>
         </div>
       </section>
       <!--<div id="map"></div>-->
+      </div>
     <footer style="background-color: #111;" class="section-inverse">
       <div class="container"> 
         <div class="row copyright">
