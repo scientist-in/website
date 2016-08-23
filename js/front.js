@@ -94,7 +94,11 @@ $(".navbar-btn").click(function(){
     $(this).toggleClass('collapsed');
     
 });
-
+$('#navigation').click(function(){
+    $(".overlay-for-navbar").css("z-index",-1);
+    $(this).toggleClass('in');
+    $(".navbar-btn").toggleClass('collapsed');
+});
 //$(window).scroll(function(){
   //console.log($('#header-topic').offset().top);
   //console.log($(window).scrollTop());
