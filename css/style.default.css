@@ -446,11 +446,7 @@ NAVBAR
     margin-left: -15px;
   }
 }
-.navbar-toggle {
-  padding: 9px 10px !important;
-  margin-right: 15px;
-  border-radius: 0;
-}
+
 .navbar-nav {
   margin: 4.5px -15px;
 }
@@ -1100,3 +1096,41 @@ a.list-group-item.active > .badge,
 	background-color: #EEE;	
 }
 
+
+.navbar-toggle {
+  padding: 9px 10px !important;
+  margin-right: 15px;
+  border-radius: 0;
+	border: none;
+  background: transparent !important;
+}
+.navbar-toggle:hover {
+    background: transparent !important;
+  }
+
+.navbar-toggle .icon-bar {
+    width: 22px;
+    transition: all 0.2s;
+  }
+.navbar-toggle .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+  }
+.navbar-toggle  .middle-bar {
+    opacity: 0;
+  }
+.navbar-toggle .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+  }
+
+
+.navbar-toggle.collapsed .top-bar {
+    transform: rotate(0);
+}
+.navbar-toggle.collapsed .middle-bar {
+    opacity: 1;
+}
+.navbar-toggle.collapsed .bottom-bar {
+    transform: rotate(0);
+}

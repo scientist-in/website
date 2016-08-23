@@ -91,6 +91,8 @@ $(".navbar-btn").click(function(){
     } else {
         $(".overlay-for-navbar").css("z-index",-1);
     }
+    $(this).toggleClass('collapsed');
+    
 });
 
 //$(window).scroll(function(){
