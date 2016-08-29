@@ -8,10 +8,10 @@ body {
   height: 100%;
 	font-weight: 100;
 }
-@font-face{
+/*@font-face{
 	font-family: satisfy;
 	src: url("satisfy.ttf"); 
-}
+}*/
 @font-face{
 	font-family: 'aspergit';
 	src: url("aspergit.otf"); 
@@ -34,10 +34,11 @@ body {
   background-attachment: fixed;
 }
 #landing-brand{
-  font-family: satisfy;
-  font-size: 80px;
+  font-family: 'Satisfy', cursive;
+  font-size: 100px;
   color: #000;
-	font-weight: 700;	
+	font-weight: 400;
+	letter-spacing: 0em;	
 }
 #tagline{
   font-family: satisfy;
