@@ -99,6 +99,56 @@ $('#navigation').click(function(){
     $(this).toggleClass('in');
     $(".navbar-btn").toggleClass('collapsed');
 });
+
+//contact us ajax
+
+//$("#contact-form").submit(function(e) {
+//
+//    var url = "demos.scientist-tech.com/reco/contact-us"; // the script where you handle the form input.
+//
+//    $.ajax({
+//           type: "POST",
+//           url: url,
+//           name: document.contact-form.name.value,
+//           email:document.contact-form.email.value,
+//           message:document.contact-form.message.value,
+//           domain:'website',// serializes the form's elements.
+//           success: function()
+//           {
+//               alert('Thanks! we will get back to you shortly'); // show response from the php script.
+//           }
+//         });
+//
+//    e.preventDefault(); // avoid to execute the actual submit of the form.
+//});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //$(window).scroll(function(){
   //console.log($('#header-topic').offset().top);
   //console.log($(window).scrollTop());
