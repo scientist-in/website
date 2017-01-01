@@ -275,8 +275,12 @@ NAVBAR
 .services .col-sm-4{
   height: 45vh;
 }
+.services .col-md-5{
+  height: 45vh;
+}
 
-.col-sm-4 .box{
+
+.services .box{
   margin-top: 12vh;
 }
 
