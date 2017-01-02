@@ -258,6 +258,10 @@ NAVBAR
 	background-color: #333;
   
 }
+#header-topic0{
+  z-index: 995;
+  transition: all 1s ease;
+}
 #header-topic{
 	z-index: 1000;
 	transition: all 1s ease;
@@ -275,6 +279,9 @@ NAVBAR
 .services .col-sm-4{
   height: 45vh;
 }
+.services .service{
+  height: 30vh;
+}
 .services .col-md-5{
   height: 45vh;
 }
@@ -282,6 +289,15 @@ NAVBAR
 
 .services .box{
   margin-top: 12vh;
+}
+
+.service .box{
+  margin-top: 4vh;
+  cursor: pointer;
+}
+
+.service p{
+display: none;
 }
 
 .navbar-collapse {

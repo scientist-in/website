@@ -9,12 +9,27 @@ $(function () {
 
 });
 $(document).ready(function(){
-    var waypoint1 = new Waypoint({
-    element: document.getElementById('header-topic'),
+    var waypoint0 = new Waypoint({
+    element: document.getElementById('header-topic0'),
     handler: function() {
-        $("#header-topic").sticky({topSpacing:42});
+        $("#header-topic0").sticky({topSpacing:42});
     },  
     offset: 42
+    });
+    var waypoint = new Waypoint({
+    element: document.getElementById('header-topic'),
+    handler: function(direction) {
+        if (direction=='down'){
+        $("#header-topic0").unstick();
+        $("#header-topic").sticky({topSpacing:42});    
+        }
+        else{
+        $("#header-topic").unstick();
+        $("#header-topic0").sticky({topSpacing:42});        
+        }
+        
+    },
+    offset:$("#header-topic0").height()+42
     });
     var waypoint2 = new Waypoint({
     element: document.getElementById('header-topic2'),
@@ -77,11 +92,46 @@ $(document).ready(function(){
 }
 
 );
+
+//simple click navigations on icons
+// --------------------------------
+
+
+//animation on home button
 $("#intro").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#services").offset().top+18
+    }, 1000);
+});
+
+//animation on home button
+$("#analytics-box").click(function() {
     $('html, body').animate({
         scrollTop: $("#analytics").offset().top+18
     }, 1000);
 });
+
+//animation on home button
+$("#ds-box").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#data-science").offset().top+18
+    }, 1000);
+});
+
+//animation on home button
+$("#ml-box").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#machine-learning").offset().top+18
+    }, 1000);
+});
+
+//animation on home button
+$("#ai-box").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#ai").offset().top+18
+    }, 1000);
+});
+
 //$("li a").click(function() {
 //    $(".navbar-header button").trigger("click");
 //});
@@ -99,6 +149,18 @@ $('#navigation').click(function(){
     $(this).toggleClass('in');
     $(".navbar-btn").toggleClass('collapsed');
 });
+
+
+// animation on the service page
+$('.service')
+    .mouseenter(function(){
+        $( this ).find( 'p' ).fadeIn("slow")
+    })
+    .mouseleave(function(){
+        $( this ).find( 'p' ).fadeOut(3000)
+    });
+
+
 
 //contact us ajax
 
