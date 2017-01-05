@@ -154,10 +154,10 @@ $('#navigation').click(function(){
 // animation on the service page
 $('.service')
     .mouseenter(function(){
-        $( this ).find( 'p' ).fadeIn("slow")
+        $( this ).find( 'p' ).fadeIn("slow");
     })
     .mouseleave(function(){
-        $( this ).find( 'p' ).fadeOut(3000)
+        $( this ).find( 'p' ).fadeOut("fast");
     });
 
 
